@@ -31,22 +31,20 @@
       }
       
     async function myslider(){
-    console.log('myslider');
-    data = '';
-    let isRun = true;
-    
-    if(isRun){
-        while (true){
-            if(isRun){
-                await sleep(timerValue);
-                console.log(getNewUrl());
-                address.setAttribute("href", getNewUrl());
-            }else{
-                break;
-            }
-        }
+      console.log('myslider');
+
+      if(isRun){
+          while (true){
+              if(isRun){
+                  await sleep(timerValue);
+                  console.log(getNewUrl());
+                  address.setAttribute("href", getNewUrl());
+              }else{
+                  break;
+              }
+          }
+      }
     }
-    
       
     </script>
   </head>

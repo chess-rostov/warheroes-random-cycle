@@ -30,6 +30,10 @@
         return url;
       }
       
+      function sleep(ms) {
+          return new Promise(resolve => setTimeout(resolve, ms));
+      }
+      
     async function myslider(){
       console.log('myslider');
 
